@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "36873aa1-01f8-4290-a388-cdeff1d40fd9",
+		"name": "RestAPI_books_POSTMAN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20612723"
+	},
+	"item": [
+		{
+			"name": "insertBook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 5,\r\n    \"name\":\"shiva5\",\r\n    \"cost\" : 500,\r\n    \"author\" : \"someone-5\"   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/insertBook",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"insertBook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllBooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/books",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBookByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/book/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateBook",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 2,\r\n    \"name\" : \"shiva2\",\r\n    \"cost\" : 200,\r\n    \"author\" : \"someone-2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/updateBook",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateBook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteBookById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/deleteBook/6",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteBook",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateBookDetals",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 22,\r\n    \"name\" : \"shiva-222\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/updateBookDetails/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateBookDetails",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
